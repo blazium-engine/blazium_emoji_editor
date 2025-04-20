@@ -75,7 +75,6 @@ func _init() -> void:
 	add_child(grid)
 	for emoji in emoji_list:
 		var emoji_button := Button.new()
-		emoji_button.focus_mode = Control.FOCUS_NONE
 		emoji_button.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
 		emoji_button.theme_type_variation = "EmojiButton"
 		emoji_button.icon = load(emoji_list[emoji])
